@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NOUMENA 诺曼纳官方单页网站。钻石系列专业男士紧身健身服，Your core inside。"
+    />
+    <meta name="theme-color" content="#050b18" />
+    <title>NOUMENA 诺曼纳 | Your core inside</title>
+    <script>
+      function shouldSuppressThemeError(value) {
+        const message = String(value || "");
+        return message.includes("getThemeColors") || message.includes("exportedColors");
+      }
+      const originalConsoleError = console.error.bind(console);
+      console.error = function (...args) {
+        if (args.some(shouldSuppressThemeError)) {
+          return;
+        }
+        originalConsoleError(...args);
+      };
+      window.addEventListener("error", function (event) {
+        if (shouldSuppressThemeError(event.message) || shouldSuppressThemeError(event.error?.stack)) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener("unhandledrejection", function (event) {
+        if (shouldSuppressThemeError(event.reason) || shouldSuppressThemeError(event.reason?.stack)) {
+          event.preventDefault();
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-DgvIaLWu.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BBRmWY7j.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" data-header>
+        <a class="brand-mark" href="#hero" aria-label="NOUMENA 首页">
+          <span class="diamond-mini" aria-hidden="true">
+            <img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="" />
+          </span>
+          <span>
+            <strong>NOUMENA</strong>
+            <small>Your core inside</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="打开导航" data-nav-toggle>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" data-nav>
+          <a href="#products">产品系列</a>
+          <a href="#philosophy">品牌理念</a>
+          <a href="#training-tools">训练工具</a>
+          <a href="#rehab">运动康复</a>
+          <a href="#size">尺码指南</a>
+          <a href="#follow">关注我们</a>
+        </nav>
+        <div class="language-switcher" data-language-switcher>
+          <button class="language-button" type="button" data-language-button aria-haspopup="true" aria-expanded="false">
+            简体中文
+          </button>
+          <div class="language-menu" data-language-menu hidden>
+            <button type="button" data-lang-option="zh">简体中文</button>
+            <button type="button" data-lang-option="en">English</button>
+            <button type="button" data-lang-option="zh-Hant">繁體中文</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section" id="hero" data-section>
+          <div class="city-skyline" aria-hidden="true">
+            <span class="tower t1"></span>
+            <span class="tower t2"></span>
+            <span class="tower t3"></span>
+            <span class="tower t4"></span>
+            <span class="tower t5"></span>
+            <span class="tower t6"></span>
+          </div>
+          <div class="hero-light" aria-hidden="true"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">NOUMENA DIAMOND SERIES · 2025.09</p>
+              <h1>你的身体，<br />就是你的超能力</h1>
+              <p class="hero-subtitle">NOUMENA 钻石系列 · 专业男士紧身健身服</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#products">查看钻石系列</a>
+                <a class="btn btn-ghost" href="#philosophy">理解诺曼纳</a>
+              </div>
+            </div>
+            <div class="hero-symbol reveal" data-parallax>
+              <div class="diamond-3d" aria-label="NOUMENA 立体菱形钻石核心视觉">
+                <img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="NOUMENA 钻石标识" />
+              </div>
+              <div class="orbital-line line-a" aria-hidden="true"></div>
+              <div class="orbital-line line-b" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="philosophy section" id="philosophy" data-section>
+          <div class="container split-layout">
+            <article class="section-copy reveal">
+              <p class="eyebrow">BRAND PHILOSOPHY</p>
+              <h2>强大，从掌控自己的身体开始</h2>
+              <div class="copy-stack">
+                <p>不必等待英雄降临，你就是自己人生的主角。</p>
+                <p>NOUMENA 钻石系列，为每一个不甘平庸的训练者而生。</p>
+                <p>美式复古紧身剪裁，精准勾勒肌肉线条，让你每一次训练都充满仪式感；高弹速干透气面料，适配高强度训练与日常穿搭，时尚与运动无缝衔接。</p>
+                <p>我们不制造英雄，我们只陪你打磨属于自己的超能力。</p>
+                <p>2025年9月，钻石系列正式发布。</p>
+                <p class="quote-line">能力越大，对自己的责任越大。</p>
+              </div>
+            </article>
+            <aside class="philosophy-visual reveal" aria-label="钻石图形与肌肉线条剪影">
+              <div class="muscle-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="diamond-outline">
+                <img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="NOUMENA 钻石标识" />
+              </div>
+              <p>核心，不在外部崇拜；<br />核心，在你身体内部。</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="products section" id="products" data-section>
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">PRODUCT SERIES</p>
+              <h2>钻石系列</h2>
+            </div>
+            <div class="product-grid">
+              <article class="product-card reveal">
+                <div class="product-image product-image-real">
+                  <img src="/assets/t-shirt-23dJfU9i.jpg" alt="钻石系列紧身短袖产品图" />
+                </div>
+                <div class="product-body">
+                  <h3>钻石系列紧身短袖</h3>
+                  <p>胸口钻石标识 · 成衣水洗工艺 · 柔软亲肤体感 · 高弹速干面料 · 美式修身剪裁</p>
+                  <div class="product-meta">
+                    <span>三色可选</span>
+                    <span>DIAMOND TEE</span>
+                  </div>
+                  <a class="btn btn-card" href="#size">了解详情</a>
+                </div>
+              </article>
+
+              <article class="product-card reveal">
+                <div class="product-image product-image-real">
+                  <img src="/assets/vest-n-JiC4AX.jpg" alt="钻石系列运动背心产品图" />
+                </div>
+                <div class="product-body">
+                  <h3>钻石系列运动背心</h3>
+                  <p>显倒三角版型 · 成衣水洗工艺 · 柔软亲肤体感 · 透气无束缚 · 训练日常两用</p>
+                  <div class="product-meta">
+                    <span>三色可选</span>
+                    <span>DIAMOND TANK</span>
+                  </div>
+                  <a class="btn btn-card" href="#size">了解详情</a>
+                </div>
+              </article>
+            </div>
+            <aside class="lead-capture reveal" data-lead-card="products">
+              <div class="lead-copy">
+                <p class="eyebrow">FIRST DROP BENEFIT</p>
+                <h3>首发限量福利 | 领取专属优惠券</h3>
+                <p>抢先预约，锁定新品首发专属权益</p>
+              </div>
+              <form class="lead-form" data-lead-form data-lead-source="products">
+                <label>
+                  <span>手机号</span>
+                  <input type="tel" name="phone" placeholder="请输入手机号" required />
+                </label>
+                <label>
+                  <span>微信号</span>
+                  <input type="text" name="wechat" placeholder="请输入微信号" required />
+                </label>
+                <button class="btn btn-primary" type="submit">立即预约领券</button>
+                <p class="lead-success" data-lead-success aria-live="polite"></p>
+              </form>
+            </aside>
+          </div>
+        </section>
+
+        <section class="training-tools section" id="training-tools" data-section>
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">TRAINING TOOLS</p>
+              <h2>专属训练工具 · 免费使用</h2>
+              <p class="section-lead">不止是健身服，更是你的全套训练伙伴</p>
+            </div>
+            <div class="tools-grid">
+              <article class="tool-card reveal">
+                <span class="tool-icon" aria-hidden="true">
+                  <span><img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="" /></span>
+                </span>
+                <div class="tool-card-content">
+                  <p class="tool-kicker">AI PLAN</p>
+                  <h3>AI 定制训练计划</h3>
+                  <p>输入身高体重与目标，生成专属一周训练方案。</p>
+                  <button class="btn btn-card" type="button" data-tool-open="training">开始生成</button>
+                </div>
+              </article>
+              <article class="tool-card reveal">
+                <span class="tool-icon" aria-hidden="true">
+                  <span><img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="" /></span>
+                </span>
+                <div class="tool-card-content">
+                  <p class="tool-kicker">NUTRITION</p>
+                  <h3>AI 饮食计划</h3>
+                  <p>基于身高体重与活动量，生成每日热量和三餐建议。</p>
+                  <button class="btn btn-card" type="button" data-tool-open="diet">开始生成</button>
+                </div>
+              </article>
+              <article class="tool-card reveal">
+                <span class="tool-icon tool-icon-red" aria-hidden="true">
+                  <span><img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="" /></span>
+                </span>
+                <div class="tool-card-content">
+                  <p class="tool-kicker">SIZE MATCH</p>
+                  <h3>智能尺码推荐</h3>
+                  <p>3秒匹配最适合你的版型尺码。</p>
+                  <a class="btn btn-primary" href="#size">立即测算</a>
+                </div>
+              </article>
+            </div>
+            <div class="tool-workbench reveal" data-tool-workbench hidden>
+              <article class="tool-panel" data-tool-panel="training" hidden>
+                <div class="tool-panel-header">
+                  <div>
+                    <p class="tool-kicker">AI PLAN GENERATOR</p>
+                    <h3>AI 定制训练计划生成器</h3>
+                  </div>
+                  <button class="tool-close" type="button" data-tool-close aria-label="关闭训练计划工具">关闭</button>
+                </div>
+                <form class="tool-form" data-training-form>
+                  <div class="tool-form-grid">
+                    <label>
+                      <span>身高(cm)</span>
+                      <input type="number" name="height" min="140" max="220" placeholder="例如 175" required />
+                    </label>
+                    <label>
+                      <span>体重(斤)</span>
+                      <input type="number" name="weightJin" min="70" max="260" placeholder="例如 140" required />
+                    </label>
+                    <label>
+                      <span>训练水平</span>
+                      <select name="level" required>
+                        <option value="新手">新手</option>
+                        <option value="进阶">进阶</option>
+                        <option value="资深">资深</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>训练目标</span>
+                      <select name="goal" required>
+                        <option value="增肌">增肌</option>
+                        <option value="塑形紧致">塑形紧致</option>
+                        <option value="体能提升">体能提升</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>每周训练天数</span>
+                      <select name="days" required>
+                        <option value="3">3天</option>
+                        <option value="4">4天</option>
+                        <option value="5">5天</option>
+                      </select>
+                    </label>
+                  </div>
+                  <fieldset class="tool-checkboxes">
+                    <legend>特殊情况（可多选）</legend>
+                    <label><input type="checkbox" name="conditions" value="膝盖不适" /> 膝盖不适</label>
+                    <label><input type="checkbox" name="conditions" value="腰部不适" /> 腰部不适</label>
+                    <label><input type="checkbox" name="conditions" value="仅家用哑铃" /> 仅家用哑铃</label>
+                    <label><input type="checkbox" name="conditions" value="无器械徒手" /> 无器械徒手</label>
+                  </fieldset>
+                  <button class="btn btn-primary" type="submit">生成训练计划</button>
+                </form>
+                <div class="tool-result" data-training-result>
+                  填写训练信息后，将自动生成一周训练分化、动作、组数、次数与训练提示。
+                </div>
+              </article>
+
+              <article class="tool-panel" data-tool-panel="diet" hidden>
+                <div class="tool-panel-header">
+                  <div>
+                    <p class="tool-kicker">NUTRITION GENERATOR</p>
+                    <h3>AI 饮食计划生成器</h3>
+                  </div>
+                  <button class="tool-close" type="button" data-tool-close aria-label="关闭饮食计划工具">关闭</button>
+                </div>
+                <form class="tool-form" data-diet-form>
+                  <div class="tool-form-grid">
+                    <label>
+                      <span>身高(cm)</span>
+                      <input type="number" name="height" min="140" max="220" placeholder="例如 175" required />
+                    </label>
+                    <label>
+                      <span>体重(斤)</span>
+                      <input type="number" name="weightJin" min="70" max="260" placeholder="例如 140" required />
+                    </label>
+                    <label>
+                      <span>日常活动量</span>
+                      <select name="activity" required>
+                        <option value="久坐办公">久坐办公</option>
+                        <option value="日常走动">日常走动</option>
+                        <option value="高强度训练">高强度训练</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>饮食目标</span>
+                      <select name="goal" required>
+                        <option value="增肌增重">增肌增重</option>
+                        <option value="控脂塑形">控脂塑形</option>
+                      </select>
+                    </label>
+                  </div>
+                  <button class="btn btn-primary" type="submit">生成饮食计划</button>
+                </form>
+                <div class="tool-result" data-diet-result>
+                  填写身体数据和饮食目标后，将自动计算热量、蛋白质范围并生成三餐+加餐建议。
+                </div>
+              </article>
+            </div>
+            <aside class="lead-capture lead-capture-compact reveal" data-lead-card="tools">
+              <div class="lead-copy">
+                <p class="eyebrow">FIRST DROP BENEFIT</p>
+                <h3>首发限量福利 | 领取专属优惠券</h3>
+                <p>抢先预约，锁定新品首发专属权益</p>
+              </div>
+              <form class="lead-form" data-lead-form data-lead-source="tools">
+                <label>
+                  <span>手机号</span>
+                  <input type="tel" name="phone" placeholder="请输入手机号" required />
+                </label>
+                <label>
+                  <span>微信号</span>
+                  <input type="text" name="wechat" placeholder="请输入微信号" required />
+                </label>
+                <button class="btn btn-primary" type="submit">立即预约领券</button>
+                <p class="lead-success" data-lead-success aria-live="polite"></p>
+              </form>
+            </aside>
+          </div>
+        </section>
+
+        <section class="rehab section" id="rehab" data-section>
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">REHABILITATION & POSTURE</p>
+              <h2>运动康复 & 体态矫正</h2>
+              <p class="section-lead">按体态、损伤、器械与场景动态生成安全训练方案。</p>
+            </div>
+            <div class="rehab-panel reveal">
+              <form class="tool-form rehab-form" data-rehab-form>
+                <div class="tool-form-grid">
+                  <label>
+                    <span>一级分类</span>
+                    <select name="category" required>
+                      <option value="posture">体态矫正</option>
+                      <option value="injury">运动损伤康复</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>细分选择</span>
+                    <select name="detail" required></select>
+                  </label>
+                  <label>
+                    <span>器械条件</span>
+                    <select name="equipment" required>
+                      <option value="home">无器械居家</option>
+                      <option value="bands">仅哑铃/弹力带</option>
+                      <option value="gym">健身房全器械</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>使用场景</span>
+                    <select name="scenario" required>
+                      <option value="desk">日常久坐放松</option>
+                      <option value="prehab">健身前置预防</option>
+                      <option value="return">损伤后康复训练</option>
+                    </select>
+                  </label>
+                </div>
+                <button class="btn btn-primary" type="submit">生成康复方案</button>
+              </form>
+              <div class="rehab-result" data-rehab-result>
+                选择你的情况后，将展示肌肉放松、肌群激活、力量强化与禁忌提示。
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="size-guide section" id="size" data-section>
+          <div class="container">
+            <div class="size-panel reveal">
+              <div>
+                <p class="eyebrow">SIZE GUIDE</p>
+                <h2>找到你的专属尺码</h2>
+                <p>输入身高体重，即可获得精准尺码推荐。此处已预留智能尺码推荐工具入口，后续可直接嵌入算法或表单服务。</p>
+                <form class="size-calculator" data-size-form>
+                  <div class="size-fields">
+                    <label>
+                      <span>身高 CM</span>
+                      <input type="number" name="height" min="150" max="200" placeholder="例如 175" required />
+                    </label>
+                    <label>
+                      <span>体重 KG</span>
+                      <input type="number" name="weight" min="40" max="110" step="0.1" placeholder="例如 68" required />
+                    </label>
+                  </div>
+                  <button class="btn btn-primary" type="submit">智能尺码推荐</button>
+                  <p class="size-result" data-size-result>输入身高体重后，系统会按 M / L / XL 三码表推荐。</p>
+                </form>
+              </div>
+              <div class="size-tables">
+                <div class="table-block">
+                  <h3>基础尺码表</h3>
+                  <div class="table-wrap" aria-label="基础尺码表">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>尺码</th>
+                          <th>胸围(CM)</th>
+                          <th>腰围(CM)</th>
+                          <th>建议体重(斤)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>M</td>
+                          <td>96 - 102</td>
+                          <td>83 - 89</td>
+                          <td>95 - 120</td>
+                        </tr>
+                        <tr>
+                          <td>L</td>
+                          <td>102 - 108</td>
+                          <td>89 - 95</td>
+                          <td>121 - 140</td>
+                        </tr>
+                        <tr>
+                          <td>XL</td>
+                          <td>108 - 115</td>
+                          <td>95 - 102</td>
+                          <td>141 - 175</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="table-note">手工测量存在1-3cm误差；紧身款自带弹性，处于两码之间建议选临近尺码。</p>
+                </div>
+                <div class="table-block">
+                  <h3>身高体重参照表</h3>
+                  <div class="table-wrap" aria-label="身高体重参照表">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>体重\身高</th>
+                          <th>165-168</th>
+                          <th>172-175</th>
+                          <th>178-185</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>50-60kg</td>
+                          <td>M</td>
+                          <td>M/L</td>
+                          <td>L</td>
+                        </tr>
+                        <tr>
+                          <td>60-70kg</td>
+                          <td>M/L</td>
+                          <td>L</td>
+                          <td>XL</td>
+                        </tr>
+                        <tr>
+                          <td>70-87.5kg</td>
+                          <td>L</td>
+                          <td>XL</td>
+                          <td>XL</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="embed-slot reveal">
+              <span class="diamond-mini" aria-hidden="true">
+                <img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="" />
+              </span>
+              <div>
+                <strong>训练计划工具嵌入位置</strong>
+                <p>预留给训练计划、会员成长、周期打卡或私域转化模块。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq section" id="faq" data-section>
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">FAQ</p>
+              <h2>你可能想知道</h2>
+            </div>
+            <div class="faq-list reveal">
+              <details class="faq-item" open>
+                <summary>面料手感怎么样？会不会硬？</summary>
+                <p>采用成衣水洗工艺处理，面料柔软亲肤，上身无束缚感，兼顾训练支撑性与日常穿着舒适度，洗后不易发硬变形。</p>
+              </details>
+              <details class="faq-item">
+                <summary>面料透不透？出汗会不会贴身？</summary>
+                <p>采用高弹速干面料，克重适中不透色，出汗后不粘身，保持干爽体感。</p>
+              </details>
+              <details class="faq-item">
+                <summary>会不会勒腋下？显不显倒三角？</summary>
+                <p>美式修身剪裁，腋下预留活动量不紧绷；肩线与收腰设计优化比例，视觉强化倒三角效果。</p>
+              </details>
+              <details class="faq-item">
+                <summary>日常穿出门会不会奇怪？</summary>
+                <p>版型兼顾训练与日常，搭配短裤、牛仔裤都适配，健身房与出街无缝切换。</p>
+              </details>
+              <details class="faq-item">
+                <summary>怎么洗护？会不会起球缩水？</summary>
+                <p>颜色区分，使用冷水机洗或手洗，避免长时间浸泡；正常洗护不易起球缩水。</p>
+              </details>
+              <details class="faq-item">
+                <summary>发货和退换货政策是怎样的？</summary>
+                <p>下单后48小时内发货，支持7天无理由退换，不影响二次销售即可。</p>
+              </details>
+              <details class="faq-item">
+                <summary>后续会出更多款式吗？</summary>
+                <p>钻石系列为首发核心款，后续会持续拓展长袖、长裤等新品，可关注账号获取更新。</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="follow section" id="follow" data-section>
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">FOLLOW US</p>
+              <h2>找到我们</h2>
+              <p class="section-lead">加入NOUMENA训练社群，交流健身心得，获取专属福利。</p>
+            </div>
+            <div class="social-grid">
+              <article class="social-card reveal">
+                <span class="social-icon">抖</span>
+                <span class="social-spark" aria-hidden="true"></span>
+                <h3>抖音</h3>
+                <p>@账号占位</p>
+                <a class="btn btn-card" href="https://v.douyin.com/0QRWVkdVBMs/" target="_blank" rel="noopener noreferrer">跳转关注</a>
+              </article>
+              <article class="social-card reveal">
+                <span class="social-icon">红</span>
+                <span class="social-spark" aria-hidden="true"></span>
+                <h3>小红书</h3>
+                <p>@账号占位</p>
+                <a class="btn btn-card" href="https://xhslink.com/m/foaIGVHUbJ" target="_blank" rel="noopener noreferrer">跳转关注</a>
+              </article>
+              <article class="social-card reveal">
+                <span class="social-icon">淘</span>
+                <span class="social-spark" aria-hidden="true"></span>
+                <h3>淘宝</h3>
+                <p>店铺名占位</p>
+                <a class="btn btn-card" href="https://m.tb.cn/h.8X6IYIRgXGBj0og" target="_blank" rel="noopener noreferrer">进入店铺</a>
+              </article>
+              <article class="social-card social-card-primary reveal">
+                <span class="social-icon">微</span>
+                <span class="social-spark" aria-hidden="true"></span>
+                <h3>微信私域</h3>
+                <p>微信号：NOU_ME_NA</p>
+                <button class="btn btn-primary" type="button" data-copy-wechat="NOU_ME_NA">复制微信号</button>
+                <span class="copy-tip" data-copy-tip aria-live="polite"></span>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span class="diamond-mini" aria-hidden="true">
+          <img src="/assets/noumena-diamond-official-De_3iaXU.png" alt="" />
+        </span>
+        <p>NOUMENA © 2025 | Your core inside</p>
+      </footer>
+    </div>
+
+  </body>
+</html>
